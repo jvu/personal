@@ -1,0 +1,6 @@
+[core]
+	autocrlf = true
+	ignorecase = false
+	filemod = false
+[alias]
+	co = checkout
