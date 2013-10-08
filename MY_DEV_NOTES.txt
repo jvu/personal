@@ -1,0 +1,5 @@
+== TAIL LOGS
+tail -f [[ERROR_LOG]] | sed 's/\\n/\n/g; s/, referer: .*$//g'
+
+== LIST PROCESSES
+ps aux
