@@ -91,7 +91,9 @@ try{
 	dlg.source.b.onClick = function(){
 		source = Folder.selectDialog("Select your source folder in which you like to resize.");
 		if(!source) { source = null; return; }
+		destination = source;
 		dlg.sourceLabel.text = "Source Folder: " + source.name;
+		dlg.destinationLabel.text = "Destination Folder: " + destination.name;
 		sourceFiles = source.getFiles(/\.(bmp|gif|jpg|jpeg|png|psd|tif|tiff)$/i);
 		if(sourceFiles == null){
 			Window.alert("The folder selected was either invalid or empty.");
